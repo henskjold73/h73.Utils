@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using h73.Utils.Comparers;
 
-namespace h73.Utils
+namespace h73.Utils.Comparers
 {
     public static class ComparerExtensions
     {

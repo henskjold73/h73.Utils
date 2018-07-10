@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace h73.Utils
+namespace h73.Utils.Range
 {
     public class Range<T>
     {

@@ -1,4 +1,4 @@
-﻿namespace h73.Utils
+﻿namespace h73.Utils.Range
 {
     public static class RangeHelpers
     {

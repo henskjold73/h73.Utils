@@ -1,4 +1,5 @@
 ﻿using System;
+using h73.Utils.Range;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace h73.Utils.Test

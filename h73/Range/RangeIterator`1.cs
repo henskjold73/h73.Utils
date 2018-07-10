@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using h73.Utils.Comparers;
 
-namespace h73.Utils
+namespace h73.Utils.Range
 {
     /// <summary>
     /// Iterates over a range. Despite its name, this implements IEnumerable{T} rather than
