@@ -7,16 +7,6 @@ namespace h73.Utils
 {
     public static class Extensions
     {
-        public static bool In<T>(this T source, params T[] list)
-        {
-            if (source == null)
-            {
-                throw new ArgumentNullException(nameof(source));
-            }
-
-            return ((IList)list).Contains(source);
-        }
-
         public static void ForEach<T>(this IEnumerable<T> sequence, Action<T> action)
         {
             var items = sequence.ToList();

@@ -1,3 +1,4 @@
+using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace h73.Utils.Test
@@ -46,6 +47,20 @@ namespace h73.Utils.Test
             Assert.AreEqual(false, "test4".In("test1", "test2", "test3"));
             Assert.AreEqual(true, MyEnum.A.In(MyEnum.A, MyEnum.B, MyEnum.C));
             Assert.AreEqual(false, MyEnum.D.In(MyEnum.A, MyEnum.B, MyEnum.C));
+        }
+
+        [TestMethod]
+        public void Between_int()
+        {
+            Assert.IsTrue(2.Between(1, 3));
+            Assert.IsFalse(4.Between(1, 3));
+        }
+
+        [TestMethod]
+        public void Between_DateTime()
+        {
+            Assert.IsTrue(DateTime.Now.Between(DateTime.Now.AddHours(-1), DateTime.Now.AddHours(1)));
+            Assert.IsFalse(DateTime.Now.AddHours(-2).Between(DateTime.Now.AddHours(-1), DateTime.Now.AddHours(1)));
         }
     }
 }
